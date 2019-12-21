@@ -1,0 +1,36 @@
+{
+  "name": "advent-of-code-2019",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "babel src --out-dir build",
+    "lint": "standard --fix",
+    "pretest": "npm run lint",
+    "prebuild": "npm run clean",
+    "test": "standard --fix && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "author": "Joe Fenton",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "pre-commit": "^1.2.2",
+    "standard": "*"
+  },
+  "dependencies": {}
+}
